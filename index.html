@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Image -->
+    <div class="background-image"></div>
+    <!-- Particles Background -->
+    <div class="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <div class="logo">Portfolio</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button id="theme-toggle" class="theme-btn">🌓</button>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll Indicators -->
+    <div class="scroll-indicators"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <h1 class="typing-effect">Hi, I'm <span class="highlight">Yaswanth</span></h1>
+            <p class="subtitle">Web Developer</p>
+            <a href="#projects" class="cta-btn floating">View Work</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab active" data-tab="summary">Summary</button>
+                <button class="tab" data-tab="skills-edu">Skills & Education</button>
+                <button class="tab" data-tab="experience">Experience</button>
+            </div>
+            <div class="tab-content">
+                <div id="summary" class="tab-pane active">
+                    <h3>Professional Summary</h3>
+                    <p>Results-driven Computer Science graduate with expertise in Python, Pega, and machine learning. Developed 3+ applications 
+                        automating workflows by 30-40%, published in peer-reviewed journals, and certified in Pega architecture. Seeking to leverage 
+                        technical skills in a software engineering role.</p>
+                </div>
+                <div id="skills-edu" class="tab-pane">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-container">
+                        <div class="skill-bubble">HTML5</div>
+                        <div class="skill-bubble">CSS3</div>
+                        <div class="skill-bubble">JavaScript</div>
+                        <div class="skill-bubble">Pyhon</div>
+                        <div class="skill-bubble">Machine Learning</div>
+                        <div class="skill-bubble">Pega</div>
+                    </div>
+                    <h3>Education</h3>
+                    <p>Bachelor's in Computer Science<br>Raghu Engineering College | CGPA - 8.95(2019-2023)</p>
+                </div>
+                <div id="experience" class="tab-pane">
+                    <h3>Work Experience</h3>
+                    <div class="experience-item">
+                        <h4>Virtusa</h4>
+                        <p class="date">Jan 2023 - Apr 2023</p>
+                        <ul>
+                            <li>Engineered a Pega-based "Animal Rescue" application, automating 50% of manual workflows and reducing processing 
+                                time by 25%</li>
+                            <li>Collaborated with cross-functional teams to integrate user authentication and case management features, improving 
+                                system efficiency by 45%. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Get in Touch</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="cta-btn send-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        </div>
+        <p class="copyright"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
